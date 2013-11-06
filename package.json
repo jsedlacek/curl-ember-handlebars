@@ -1,6 +1,6 @@
 {
   "name": "curl-ember-handlebars",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ember Handlebars plugin for curl.js",
   "main": "Gruntfile.js",
   "directories": {
