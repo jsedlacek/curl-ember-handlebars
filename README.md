@@ -1,7 +1,7 @@
 curl-ember-handlebars [![Build Status](https://travis-ci.org/jsedlacek/curl-ember-handlebars.png)](https://travis-ci.org/jsedlacek/curl-ember-handlebars)
 =========
 
-Ember Handlebars plugin for curl.js
+Ember Handlebars plugin for [curl.js](https://github.com/cujojs/curl)
 
 Usage
 -----
@@ -16,7 +16,7 @@ define(['ehbs!application'], function() {
 
 Installation and Setup
 ----------------------
-Download curl-ember-handlebars using bower.
+Download curl-ember-handlebars using [bower](http://bower.io/).
 ```
 bower install curl-ember-handlebars --save
 ```
