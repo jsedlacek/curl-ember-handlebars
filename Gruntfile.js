@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         mocha_phantomjs: {
-        	test: ['test/*.html']
+            test: ['test/*.html']
         },
         replace: {
             index: {
@@ -31,6 +31,9 @@ module.exports = function(grunt) {
         },
         clean: {
             dist: ['test/dist-*']
+        },
+        jshint: {
+            all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
         }
     });
 
@@ -38,6 +41,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-replace');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.registerTask('test', ['exec:cram', 'replace:index', 'mocha_phantomjs:test', 'clean:dist']);
+    grunt.registerTask('test', ['jshint', 'exec:cram', 'replace:index', 'mocha_phantomjs:test', 'clean:dist']);
 };
