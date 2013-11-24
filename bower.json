@@ -1,6 +1,6 @@
 {
   "name": "curl-ember-handlebars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/jsedlacek/curl-ember-handlebars",
   "authors": [
     "Jakub Sedlacek"
@@ -23,8 +23,8 @@
     "tests"
   ],
   "dependencies": {
-    "curl": "~0.8.4",
-    "ember": "~1.1.2"
+    "curl": ">= 0.8.4",
+    "ember": ">= 1.0.0"
   },
   "devDependencies": {
     "mocha": "~1.14.0",
